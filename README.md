@@ -219,7 +219,7 @@ Now that you've personalized and finalized the setup stage, just make sure, you 
 # Extras
 ## Third-party media creation links
 
-*MCSBTool* - PowerShell based automation (with manual steps provided), [you can find it here.](https://github.com/itsSysTime/MCSBtool) This tool is not very popular, as it was recently created.
+*MCSBTool* - PowerShell-based automation (with manual steps provided), [you can find it here.](https://github.com/itsSysTime/MCSBtool) This tool is not very popular, as it was recently created.
 *Rufus* - A giant in bootable media creation, [here it is!](https://rufus.ie)
 *Etcher* - Also a giant and popular tool for bootable media creation, *why search* when you can [find it here?](https://www.balena.io/etcher)
 *Media Creation Tool* (**MCT**) - Widely used, made by **Microsoft** *officially*, it can be found in the same document, for download, [here.](https://go.microsoft.com/fwlink/?LinkId=691209)
@@ -229,3 +229,16 @@ Now that you've personalized and finalized the setup stage, just make sure, you 
 > [!Note]
 > There may be other media creation tools that exist, but this document cannot cover them all. Feel free to contribute.
 
+## Rollback steps
+To roll back from Windows 11 to 10, you can execute one of these steps:
+- Roll back with _Windows.old_, which is a directory created by the system that exists for **10 days** after the upgrade. If you deleted this folder in the root drive, or it has been over 10 days since your upgrade, _you cannot use this method_. In `Settings > System > Recovery` select **Go Back** to start the rollback process.
+- Manual rollback. You can manually rollback with:
+    - Bootable media (flash drive or DVD), power off the device, insert the media with a Windows 10 installer/setup, and you can select your existing drive where Windows is installed and overwrite this installation.
+    - Mounted setup. You can use an ISO, mount it (you can mount it in _Windows Explorer_ by right-clicking it and selecting "_Mount_", pressing "_Mount_" in the bar above, or pressing "_Enter_" after selecting it), and run setup.exe in the root of the mounted drive.
+    - WIM deployment. If you have bootable media (you cannot use a mounted ISO file due to UDFS file system permissions, where they are, by default, **read-only**), insert it in another environment (such as **Windows PE**), and find the file `[your media here]:\sources\install.wim`, it may also be seen as **install.esd** in more modern installations. To convert a .esd file to .wim, you must use `dism /Get-WimInfo /WimFile:[path to install.esd]`, and then select an index, aka edition, you want to save to as _.wim_ then, use `dism /export-image /SourceImageFile:[path to install.esd] /SourceIndex:[index number] /DestinationImageFile:[YOUR MEDIA\sources\install.wim] /Compress:max /CheckIntegrity`, and follow the steps given for _.wim_ You can now use the command `Dism /Apply-Image /ImageFile:[path to install.wim] /ApplyDir:[your root drive, which is offline] /Index:[edition index, use GetWimInfo from above to find this]`
+
+-----
+# Credits
+_itsSysTime_
+## Date since last good update
+**09/06/2025** _September 6th, 2025_
