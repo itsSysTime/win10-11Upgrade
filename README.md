@@ -46,7 +46,7 @@ To be sure you are eligible for installing **Windows 11**, you can use the **PC 
 
 > A screenshot is shown below, displaying the **PC Health Check** application.
 
-![Pasted image 20250628202924.png](/assets/Pasted image 20250628202924.png)
+![animage3.png](/assets/animage3.png)
 
 # Preparation
 
@@ -60,7 +60,7 @@ To begin, you can go to `Settings > Windows Update` and check for installation t
 
 > A screenshot is shown below, displaying an installation prompt in **Windows Update**.
 
-![Pasted image 20250628202708.png](/assets/Pasted image 20250628202708.png)
+![img2568.png](/assets/img2568.png)
 
 However, you can also use these resources to install **Windows 11**<sup><a href="https://www.microsoft.com/software-download/windows11">[8]</a></sup>:
 
@@ -94,8 +94,8 @@ For bootable media, *do not mount the image* and instead follow steps in the [[#
 > Gigabit ethernet can download a **Windows** ISO image within minutes,<sup><a href="https://www.techtarget.com/searchnetworking/definition/Gigabit-Ethernet">[11]</a></sup> although it depends on other factors.
 
 
-![Pasted image 20250629005912.png](/assets/Pasted image 20250629005912.png)
-![Pasted image 20250629010203.png](/assets/Pasted image 20250629010203.png)
+![whybother4.png](/assets/whybother4.png)
+![got.it.img2675.png](/assets/got.it.img2675.png)
 
 <a id="bootable-media"></a>
 ## Bootable Media
@@ -136,14 +136,14 @@ For more assistance with **Windows Setup**, see these pages:
 
 ***Setup Images***
 
-![Pasted image 20250710215637.png](/assets/Pasted image 20250710215637.png)
-![Pasted image 20250710213813.png](/assets/Pasted image 20250710213813.png)
-![Pasted image 20250710212852.png]](/assets/Pasted image 20250710212852.png)
+![activateWindows.png](/assets/activateWindows.png)
+![chooseoption.png](/assets/chooseoption.png)
+![WindowsSetup.png]](/assets/WindowsSetup.png)
 
 ***MediaCreationTool Images***
 
-![Pasted image 20250707210459.png](assets/Pasted image 20250707210459.png)
-![Pasted image 20250707210507.png](/assets/Pasted image 20250707210507.png)
+![choosemedia.png](assets/choosemedia.png)
+![flashdrive.ready.png](/assets/flashdrive.ready.png)
 
 ## Installation Assistant
 To Install **Windows 11** using the *Installation Assistant*, this section covers just that.
@@ -155,7 +155,7 @@ Refer to the table in this [[#Preparation|section]] to download the *Installatio
 4. Restart your computer once it is finished. It may display the **First Logon Animation**, but this means it is loading your applied user settings with new features and settings.<sup><a href="https://www.spyshelter.com/exe/microsoft-windows-firstlogonanim-exe/">[12]</a></sup>
 
 
-![Pasted image 20250702005103.png](/assets/Pasted image 20250702005103.png)
+![restartnotice22.png](/assets/restartnotice22.png)
 
 
 ## Post-installation
