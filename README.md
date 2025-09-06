@@ -15,7 +15,7 @@ If you are a user preparing for migration, this help file can be of assistance.
 * ****
 # Discontinuation and Support Information
 
-> [!Info]
+> [!Note]
 > **Windows 10**'s latest major version *22H2* is ending support on October 14th, 2025. Windows 10 will no longer receive free software updates (including *quality updates* and *feature updates*) or technical assistance<sup><a href="https://www.microsoft.com/windows/end-of-support">[1]</a></sup>.
 
 As Windows 10 reaches end of support, the big question is.. *"Can I stay on Windows 10? Why should I go to Windows 11?"*. Well, of course! It is totally normal to stay with Windows 10 longer. When comparing the minimum system requirements, **Windows 10** tends to be less resource-demanding<sup><a href="https://techcommunity.microsoft.com/discussions/windows11/windows-11-vs-windows-10-a-comprehensive-comparison-of-features-and-performance/3760255">[2]</a></sup>, potentially due to less resource-heavy features and security. However, switching to **Windows 11** introduces refined security options and new features that can open a new pathway for your computer (such as *Windows Hello* for identification). Perhaps some devices can still run on Windows 10? You are in luck! In fact, you can participate in the yearly, paid program known as **ESU**, formally known as the *Microsoft Extended Security Updates* program. Enterprises usually use the *Extended Security Updates* program for their corporate and enterprise devices, such as *kiosks, embedded devices, and specialized devices*.
@@ -46,11 +46,11 @@ To be sure you are eligible for installing **Windows 11**, you can use the **PC 
 
 > A screenshot is shown below, displaying the **PC Health Check** application.
 
-![[Pasted image 20250628202924.png]]
+![Pasted image 20250628202924.png](assets/Pasted image 20250628202924.png)
 
 # Preparation
 
-> [!Tip] Tip
+> [!Tip]
 > Windows Update is typically the easiest way to migrate.<sup><a href="https://support.microsoft.com/windows/ways-to-install-windows-11-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e">[7]</a></sup>
 
 Now we are ready. However, to be careful, back up your data before continuing. You can back up your data through `Control Panel > System and Security > Backup and Restore` or relying on cloud options such as **OneDrive**.  See [this guide](https://support.microsoft.com/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057) to get started on *OneDrive* and data backups. For other links or references related to data preservation, see more in the citations.<sup><a href="#^add-link1">[16]</a></sup><sup><a href="#^add-link2">[17]</a></sup><sup><a href="#^add-link3">[18]</a></sup><sup><a href="#^add-link4">[19]</a></sup>
@@ -60,7 +60,7 @@ To begin, you can go to `Settings > Windows Update` and check for installation t
 
 > A screenshot is shown below, displaying an installation prompt in **Windows Update**.
 
-![[Pasted image 20250628202708.png]]
+![Pasted image 20250628202708.png](assets/Pasted image 20250628202708.png)
 
 However, you can also use these resources to install **Windows 11**<sup><a href="https://www.microsoft.com/software-download/windows11">[8]</a></sup>:
 
@@ -90,12 +90,12 @@ To install **Windows 11** on a **Windows 10** device *using an ISO image*, you c
 
 For bootable media, *do not mount the image* and instead follow steps in the [[#Bootable Media|bootable media]] subsection.
 
-> [!Tip] Tip
+> [!Tip]
 > Gigabit ethernet can download a **Windows** ISO image within minutes,<sup><a href="https://www.techtarget.com/searchnetworking/definition/Gigabit-Ethernet">[11]</a></sup> although it depends on other factors.
 
 
-![[Pasted image 20250629005912.png]]
-![[Pasted image 20250629010203.png]]
+![Pasted image 20250629005912.png](assets/Pasted image 20250629005912.png)
+![Pasted image 20250629010203.png](assets/Pasted image 20250629010203.png)
 
 <a id="bootable-media"></a>
 ## Bootable Media
@@ -136,14 +136,15 @@ For more assistance with **Windows Setup**, see these pages:
 
 ***Setup Images***
 
-![[Pasted image 20250710215637.png]]
-![[Pasted image 20250710213813.png]]
-![[Pasted image 20250710212852.png]]
+![Pasted image 20250710215637.png](assets/Pasted image 20250710215637.png)
+![Pasted image 20250710213813.png](assets/Pasted image 20250710213813.png)
+![Pasted image 20250710212852.png]](assets/Pasted image 20250710212852.png)
 
 ***MediaCreationTool Images***
 
-![[Pasted image 20250707210459.png]]
-![[Pasted image 20250707210507.png]]
+![Pasted image 20250707210459.png](assets/Pasted image 20250707210459.png)
+![Pasted image 20250707210507.png](assets/Pasted image 20250707210507.png)
+
 ## Installation Assistant
 To Install **Windows 11** using the *Installation Assistant*, this section covers just that.
 Refer to the table in this [[#Preparation|section]] to download the *Installation Assistant*. 
@@ -154,7 +155,7 @@ Refer to the table in this [[#Preparation|section]] to download the *Installatio
 4. Restart your computer once it is finished. It may display the **First Logon Animation**, but this means it is loading your applied user settings with new features and settings.<sup><a href="https://www.spyshelter.com/exe/microsoft-windows-firstlogonanim-exe/">[12]</a></sup>
 
 
-![[Pasted image 20250702005103.png]]
+![Pasted image 20250702005103.png](assets/Pasted image 20250702005103.png)
 
 
 ## Post-installation
