@@ -209,6 +209,7 @@ Now that you've personalized and finalized the setup stage, just make sure you c
 [Backup Note] - "Now we are ready. However, to be careful, back up your data before continuing. You can back up your data through `Control Panel > System and Security > Backup and Restore` or relying on cloud options such as **OneDrive**.  See [this guide](https://support.microsoft.com/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057) to get started on *OneDrive* and data backups. For other links or references related to data preservation, see more in the citations."
 [Footnote B] - "The code provided looks for all .APPX packages containing the placeholder *"appname"*, selects only their package's full name, and removes the .APPX package, effectively removing the application with it."
 [VLSC] - An abbreviation for Microsoft's *Volume Licensing Center.*
+[Footnote A] - "CDs commonly hold 700 Megabytes at their largest, where many modern installation flash drives and DVDs require a minimum of 8 Gigabytes."
 
 # Extras
 ## Third-party media creation links
