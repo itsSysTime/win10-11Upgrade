@@ -53,8 +53,7 @@ To be sure you are eligible for installing **Windows 11**, you can use the **PC 
 > [!Tip]
 > Windows Update is typically the easiest way to migrate.<sup><a href="https://support.microsoft.com/windows/ways-to-install-windows-11-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e">[7]</a></sup>
 
-Now we are ready. However, to be careful, back up your data before continuing. You can back up your data through `Control Panel > System and Security > Backup and Restore` or relying on cloud options such as **OneDrive**.  See [this guide](https://support.microsoft.com/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057) to get started on *OneDrive* and data backups. For other links or references related to data preservation, see more in the citations.<sup><a href="#^add-link1">[16]</a></sup><sup><a href="#^add-link2">[17]</a></sup><sup><a href="#^add-link3">[18]</a></sup><sup><a href="#^add-link4">[19]</a></sup>
-^backup-note
+Now we are ready. However, to be careful, back up your data before continuing. You can back up your data through `Control Panel > System and Security > Backup and Restore` or rely on cloud options such as **OneDrive**.  See [this guide](https://support.microsoft.com/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057) to get started on *OneDrive* and data backups.
 
 To begin, you can go to `Settings > Windows Update` and check for installation there. It will prompt and be *shown as a free upgrade*.<sup><a href="https://support.microsoft.com/en-us/windows/ways-to-install-windows-11-e0edbbfb-cfc5-4011-868b-2ce77ac7c70e">[7]</a></sup>
 
@@ -73,14 +72,14 @@ To get started, you can use these links corresponding to the architecture:
 | Architecture          | Edition                                                                                                        | Links                                                                                                                                                              |
 | --------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | x86-64                | All editions except Enterprise editions can be installed here, found in the Volume Licensing Center.           | [Download Windows 11](https://www.microsoft.com/software-download/windows11)<br>[Installation Assistant Download](https://go.microsoft.com/fwlink/?linkid=2171764) |
-| ARM (including ARM64) | All editions except Enterprise editions can be installed here, found in the Volume Licensing Center.<nl>^table | [Download Windows 11 Arm64](https://www.microsoft.com/software-download/windows11arm64)                                                                            |
+| ARM (including ARM64) | All editions except Enterprise editions can be installed here, found in the Volume Licensing Center. | [Download Windows 11 Arm64](https://www.microsoft.com/software-download/windows11arm64)                                                                            |
 
 Now with this out of the way, the following subsections will provide steps for each method:
 ## ISO image
 
 To install **Windows 11** on a **Windows 10** device *using an ISO image*, you can follow these steps:
 
-1. Click one of the links above in [the table](#^table) corresponding to your system architecture
+1. Click one of the links above in the table corresponding to your system architecture
 2. Scroll down and find the disk image option (*represented in screenshot* 1)
 3. Select your download edition (typically multi-edition)
 4. Select the product language you would like (to see your system's current set language, go to `Time and Language` in *PC Settings* or `Region` in *Control Panel*) (*represented in screenshot* 2)
@@ -88,7 +87,7 @@ To install **Windows 11** on a **Windows 10** device *using an ISO image*, you c
 6. Once downloaded to your system, **mount the image** as a **drive** and find *setup.exe*, then execute it. Do not delete the *ISO* yet, in case the setup fails.
 7. Look for `[drive letter]\setup.exe` in the drive of your mounted image. Execute it as *Administrator*. This will guide you through installation, where USBs or other media (such as DVDs, and SSDs) will boot into `[drive letter]\sources\setup.exe`, which is a more flexible installer with *partition/disk formatting*, *installation path (to partition)*, and *a wider range of options*.
 
-For bootable media, *do not mount the image* and instead follow steps in the [[#Bootable Media|bootable media]] subsection.
+For bootable media, *do not mount the image* and instead follow the steps in the [[#Bootable Media|bootable media]] subsection.
 
 > [!Tip]
 > Gigabit ethernet can download a **Windows** ISO image within minutes,<sup><a href="https://www.techtarget.com/searchnetworking/definition/Gigabit-Ethernet">[11]</a></sup> although it depends on other factors.
@@ -110,7 +109,7 @@ Now, we are ready to begin! Refer to [[#ISO image|the section above]] to install
 
 Follow these steps to prepare **Windows 11** bootable media:
 1. Prepare your insertable media. Insert it into an available port meant for PNP[<sup>[abbr, 1]</sup>](^abbr-1); such as a USB port if it is a USB device. Make sure your insertable media's targeted partition is formatted as FAT32. You can format your USB in *Disk Management* or *DiskPart*
-2. Open *Disk Management* through `WIN+R > diskmgmt.msc` or Start Menu `Disk Management` and select the USB partition. If not already, format the partition as FAT32 with the guide. If the *install.wim* file in the ISO is over 4 GB, mount it to a directory or virtual drive and use *DISM* to split the file into **.swm** files. You can also format the USB as NTFS, however, you may need UEFI:NTFS drivers on a separate FAT32 partition (not needed on MBR systems). For DiskPart, you can use the commands, (QUICK format parameter is optional):
+2. Open *Disk Management* through `WIN+R > diskmgmt.msc` or Start Menu `Disk Management` and select the USB partition. If not already, format the partition as FAT32 with the guide. If the *install.wim* file in the ISO is over 4 GB, mount it to a directory or virtual drive and use *DISM* to split the file into **.swm** files. You can also format the USB as NTFS, however, you may need UEFI:NTFS drivers on a separate FAT32 partition (not needed on MBR systems). For DiskPart, you can use the commands (QUICK format parameter is optional):
 
  ```Batch
    diskpart
@@ -122,8 +121,8 @@ Follow these steps to prepare **Windows 11** bootable media:
 3. On the computer you are preparing to install **Windows 11** from the bootable media on, enter the *BIOS* or *UEFI* menu. The firmware key or UEFI key is manufacturer-specific. Once you are on the menu, look for an option similar to *Boot Menu*. After clicking the key displayed corresponding to the Boot Menu or **BIOS**, locate the boot order settings and move the detected USB drive to the top, as the highest boot priority.<sup><a href="https://help.corsair.com/hc/en-us/articles/14206252671117-Windows-How-to-Install-Windows-10-11-Using-the-Media-Creation-Tool#h_01GW5299S3ZJ3W07JBBA7SWQK0">[15]</a></sup> If your USB is formatted as NTFS to boot from a modern system (particularly one that runs on UEFI), you will need external UEFI:NTFS drivers or a re-format to FAT32.
 4. Exit the boot menu and power off the PC, or restart into the main OS.
 5. Go [here](https://go.microsoft.com/fwlink/?LinkId=691209) in a web browser and run `MediaCreationTool.exe`, or instead, feel free to use third-party software such as *Rufus*, *MCSBTool*, *Etcher*, and more. *(There is a large selection of third party tools where you can find links at the end of the document!)*
-6. Select your flash drive or other device you wish to install Windows Setup on. Additionally, the disk image could be present on the USB drive itself. It may ask for the language, system architecture, and edition. Select the edition you have a product key for, or install one for which you do not have a product key for. For editions you do not have a product key to activate, you should **activate the PC after installation**. Rufus has a different format for creating bootable media, see [this guide](https://kb.filewave.com/books/filewave-general-info/page/rufus-creating-bootable-usb-drives).
-7. After the bootable media is ready and finished fetching setup files and applying them, insert it into the PC you wish to begin installation of Windows 11 on. If you are reinstalling or clean installing on the same system, power off the device via power button, insert the drive, power it back on, and select the drive from the boot menu. After it boots from the flash drive, you should see a message regarding the installation of Windows 11, in a window known as **Windows 11 Setup** or simply **Windows Setup**.
+6. Select your flash drive or other device you wish to install Windows Setup. Additionally, the disk image could be present on the USB drive itself. It may ask for the language, system architecture, and edition. Select the edition you have a product key for, or install one for which you do not have a product key. For editions you do not have a product key to activate, you should **activate the PC after installation**. Rufus has a different format for creating bootable media; see [this guide](https://kb.filewave.com/books/filewave-general-info/page/rufus-creating-bootable-usb-drives).
+7. After the bootable media is ready and finished fetching setup files and applying them, insert it into the PC you wish to begin installation of Windows 11 on. If you are reinstalling or clean installing on the same system, power off the device via the power button, insert the drive, power it back on, and select the drive from the boot menu. After it boots from the flash drive, you should see a message regarding the installation of Windows 11, in a window known as **Windows 11 Setup** or simply **Windows Setup**.
 
 There will be multiple preferences, such as *language, time and currency, and input method*. Each window will proceed to installation, and even a repair option. You will need to enter your product key during setup; otherwise, you can press **"I don't have a product key."**, but Windows will not be activated until a product key is entered, and activation can occur without entering a product key if a digital license has been linked to your hardware or Microsoft account. Do *not* remove the flash drive during setup.
 
@@ -138,7 +137,7 @@ For more assistance with **Windows Setup**, see these pages:
 
 ![activateWindows.png](/assets/activateWindows.png)
 ![chooseoption.png](/assets/chooseoption.png)
-![WindowsSetup.png]](/assets/WindowsSetup.png)
+![WindowsSetup.png](/assets/WindowsSetup.png)
 
 ***MediaCreationTool Images***
 
@@ -146,7 +145,7 @@ For more assistance with **Windows Setup**, see these pages:
 ![flashdrive.ready.png](/assets/flashdrive.ready.png)
 
 ## Installation Assistant
-To Install **Windows 11** using the *Installation Assistant*, this section covers just that.
+To install **Windows 11** using the *Installation Assistant*, this section covers just that.
 Refer to the table in this [[#Preparation|section]] to download the *Installation Assistant*. 
 
 1. Install the *Installation Assistant* on your computer.
@@ -172,23 +171,23 @@ A reset or clean reinstallation without using external media will typically open
 After you clean install Windows 10 to 11, these are some steps you should take to ensure you have smooth sailing with your experience on **Windows 11**:
 * Set up your PC using **OOBE**, select your language, currency, time zone, and more. Let the process check for updates as well, as it has been known to check for *Windows updates*.
 * Upon finishing the **OOBE** process, it is advised to remove the default applications that you will not use (such as *Candy Crush* if you do not play it).
-* Change user settings to your liking, why not personalize it?
+* Change user settings to your liking. Why not personalize it?
 
-You can remove persistent or unremovable applications through PowerShell[<sup>[b]</sup>](#^foot-b), using:
+You can remove persistent or unremovable applications through PowerShell, using:
 ```powershell
 get-appxpackage -name "*appname*" | select -exp PackageFullName | remove-appxpackage
 ```
-It is recommended to restart to clean up files after removing the app. This only works if an .APPX file is found for said application provided.
+It is recommended to restart to clean up files after removing the app. This only works if an .APPX file is found for the said application provided.
 
-The code provided looks for all .APPX packages containing the placeholder *"appname"*, selects only their package's full name, and removes the .APPX package, effectively removing the application with it.<br>^foot-b
+The code provided looks for all .APPX packages containing the placeholder *"appname"*, select only their package's full name and remove the .APPX package, effectively removing the application with it
 
-Be careful with data loss. For a guide on backing up data, see [this reference](#^backup-note). You can access other links at:
-1. [Back up and restore with Windows Backup](https://support.microsoft.com/windows/back-up-and-restore-with-windows-backup-87a81f8a-78fa-456e-b521-ac0560e32338) - *Microsoft Support, webpage support.microsoft.com* ^add-link1
-2. [System Restore](https://support.microsoft.com/windows/system-restore-a5ae3ed9-07c4-fd56-45ee-096777ecd14e) - *Microsoft Support, webpage support.microsoft.com* ^add-link2
-3. [Move your files to a new Windows PC using an external storage device](https://support.microsoft.com/windows/move-your-files-to-a-new-windows-pc-using-an-external-storage-device-dd139b2e-bc73-4431-8e6e-c96e10dffdf5) - *Microsoft Support, webpage support.microsoft.com* ^add-link3
-4. *"Save personal files to an external storage device and later use tools such as `robocopy`, `copy`, or even `xcopy` or third-party software to then send personal files on said external device to the C: drive, where they previously had been."* - Type **footnote/text reference** ^add-link4
+Be careful with data loss. For a guide on backing up data, see the earlier note. You can access other links at:
+1. [Back up and restore with Windows Backup](https://support.microsoft.com/windows/back-up-and-restore-with-windows-backup-87a81f8a-78fa-456e-b521-ac0560e32338) - *Microsoft Support, webpage support.microsoft.com*
+2. [System Restore](https://support.microsoft.com/windows/system-restore-a5ae3ed9-07c4-fd56-45ee-096777ecd14e) - *Microsoft Support, webpage support.microsoft.com*
+3. [Move your files to a new Windows PC using an external storage device](https://support.microsoft.com/windows/move-your-files-to-a-new-windows-pc-using-an-external-storage-device-dd139b2e-bc73-4431-8e6e-c96e10dffdf5) - *Microsoft Support, webpage support.microsoft.com*
+4. *"Save personal files to an external storage device and later use tools such as `robocopy`, `copy`, or even `xcopy` or third-party software to then send personal files on said external device to the C: drive, where they previously had been."* - Type **footnote/text reference**
 
-Now that you've personalized and finalized the setup stage, just make sure, you can disconnect your USB if you haven't done during the OOBE. Typically, you can disconnect after the setup is finished (OOBE or First Logon Animation).
+Now that you've personalized and finalized the setup stage, just make sure you can disconnect your USB if you haven't done so during the OOBE. Typically, you can disconnect after the setup is finished (OOBE or First Logon Animation).
 
 # Citations
 [1] - https://www.microsoft.com/windows/end-of-support
@@ -207,13 +206,8 @@ Now that you've personalized and finalized the setup stage, just make sure, you 
 [13] - https://support.microsoft.com/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d
 [14] - https://learn.microsoft.com/en-us/microsoft-365/commerce/licenses/manage-volume-licensing?view=o365-worldwide
 [15] - https://help.corsair.com/hc/en-us/articles/14206252671117-Windows-How-to-Install-Windows-10-11-Using-the-Media-Creation-Tool#h_01GW5299S3ZJ3W07JBBA7SWQK0
-[16] - [An item listed in a bulletin.](#^add-link1)
-[17] - [Another item listed in a bulletin.](#^add-link2)
-[18] - [Third item in the same bulletin list.](#^add-link3)
-[19] - [Fourth and final item in the bulletin list.](#^add-link4)
 [Backup Note] - "Now we are ready. However, to be careful, back up your data before continuing. You can back up your data through `Control Panel > System and Security > Backup and Restore` or relying on cloud options such as **OneDrive**.  See [this guide](https://support.microsoft.com/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057) to get started on *OneDrive* and data backups. For other links or references related to data preservation, see more in the citations."
 [Footnote B] - "The code provided looks for all .APPX packages containing the placeholder *"appname"*, selects only their package's full name, and removes the .APPX package, effectively removing the application with it."
-[Table] - [The edition listing table.](#^table)
 [VLSC] - An abbreviation for Microsoft's *Volume Licensing Center.*
 
 # Extras
