@@ -1,5 +1,5 @@
 > [!Warning]
-> This document may be too long to navigate comfortably. If you have any questions, ask the Microsoft Q&A or related communities.
+> This document may be too long to navigate comfortably. If you have any questions, ask the Microsoft Q&A or related communities. There may be formatting issues due to the help file originally being composed inside of Obsidian.
 # Overview
 
 You may notice your **Windows 10** device repeatedly notifying you regarding *migrating to Windows 11*. This help file will cover topics regarding *migration* in sections such as:
