@@ -39,8 +39,9 @@ However, recent versions and few older *specialized and embedded editions* still
 * 64 gigabytes **(GB)** or a larger storage device.
 * Unified Extensible Firmware Interface **(UEFI)** being enabled on the firmware. **Secure Boot** must be capable of activation on said system.
 * Trusted Platform Module **(TPM)** of version 2.0 **(TPM 2.0)** must be enabled.
+* The CPU or 64-bit processor must support **SSE4.2**, a critical feature introduced by *Intel* in 2008 and later by *AMD*.
 * Must be compatible with DirectX version 12 or later with a Windows Display Driver Model **(WDDM)** 2.0 driver.
-* Must have a high definition (at least *720p, or 720 pixel*) display that is greater than *9" diagonally*, including at least *8 bits per color channel* **(Red, Green, Blue)**<sup><a href="https://www.microsoft.com/windows/windows-11-specifications">[5]</a></sup>.
+* Must have a high definition (at least *720p, or 720 pixel*) display that is greater than *9" diagonally*, including at least *8 bits per color channel*<sup><a href="https://www.microsoft.com/windows/windows-11-specifications">[5]</a></sup>.
 
 To be sure you are eligible for installing **Windows 11**, you can use the **PC Health Check** application to check your eligibility. The application scans your PC's system health and can identify performance issues with troubleshooting. If you *do not have **PC Health Check** installed on your computer*, you can install it [here](https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844).<sup><a href="https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844">[6]</a></sup>
 
